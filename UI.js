@@ -413,7 +413,7 @@ function library:Window(p)
 	end
 	local function open()
 		ImageLabelClose_1.Text = 'OFF'
-		tw({v = Shadow_1, t = 1, s = Enum.EasingStyle.Exponential, d = "Out", g = {Size = UDim2.new(0, 450,0.4, 0)}}):Play()	
+		tw({v = Shadow_1, t = 1, s = Enum.EasingStyle.Exponential, d = "Out", g = {Size = p.Size}}):Play()	
 		task.delay(.15, function()
 			tw({v = Page, t = .5, s = Enum.EasingStyle.Exponential, d = "Out", g = {Position = UDim2.new(0, 0, 0, 0)}}):Play()
 			tw({v = Frame_1, t = .5, s = Enum.EasingStyle.Exponential, d = "Out", g = {Position = UDim2.new(0, 0, 0, 0)}}):Play()	
